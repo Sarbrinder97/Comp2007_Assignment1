@@ -1,0 +1,43 @@
+﻿@model Comp2007_Assignment1.Models.TEAM
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TEAM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TEAM_NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TEAM_NAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TEAM_CITY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TEAM_CITY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TEAM_SPONSER)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TEAM_SPONSER)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TEAM_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

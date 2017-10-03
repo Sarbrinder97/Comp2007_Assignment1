@@ -195,6 +195,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\TeamController.cs" />
+    <Compile Include="Controllers\TEAMsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -264,6 +265,11 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Team\Index.cshtml" />
     <Content Include="Views\Team\Browse.cshtml" />
+    <Content Include="Views\TEAMs\Create.cshtml" />
+    <Content Include="Views\TEAMs\Delete.cshtml" />
+    <Content Include="Views\TEAMs\Details.cshtml" />
+    <Content Include="Views\TEAMs\Edit.cshtml" />
+    <Content Include="Views\TEAMs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
