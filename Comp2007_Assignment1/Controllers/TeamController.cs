@@ -20,6 +20,15 @@ namespace Comp2007_Assignment1.Controllers
             ViewBag.Message = "Please select a team";
             return View(teams);
         }
+        // GET: TEAM/Browse
+        public ActionResult Browse (string team)
+        {
+            var selectedTeam = db.TEAMS.Include("PLAYERS")
+                                .Single(t => t.TEAM_NAME == team);
+            return View(selectedTeam);
+        }
     }
     
+    
+
 }

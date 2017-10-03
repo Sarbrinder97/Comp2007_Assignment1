@@ -7,7 +7,7 @@
 <ul>
     @foreach (var g in Model)
     {
-        <li>@Html.ActionLink(g.TEAM_NAME, "Browse", "Store", new { team = g.TEAM_NAME }, null)</li>
+        <li>@Html.ActionLink(g.TEAM_NAME, "Browse", "Team", new { team = g.TEAM_NAME }, null)</li>
     }
 </ul>
 
