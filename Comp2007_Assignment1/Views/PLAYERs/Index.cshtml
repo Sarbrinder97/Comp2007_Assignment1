@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Comp2007_Assignment1.Models.PLAYER>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TEAM.TEAM_NAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PLAYER_NAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.POINTS_PER_GAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REBOUNDS_PER_GAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ASSISTS_PER_GAME)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TEAM.TEAM_NAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PLAYER_NAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.POINTS_PER_GAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REBOUNDS_PER_GAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ASSISTS_PER_GAME)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.JERSEY_NUMBER }) |
+            @Html.ActionLink("Details", "Details", new { id=item.JERSEY_NUMBER }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.JERSEY_NUMBER })
+        </td>
+    </tr>
+}
+
+</table>

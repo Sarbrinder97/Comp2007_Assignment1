@@ -194,6 +194,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PLAYERsController.cs" />
     <Compile Include="Controllers\TeamController.cs" />
     <Compile Include="Controllers\TEAMsController.cs" />
     <Compile Include="Global.asax.cs">
@@ -270,6 +271,11 @@
     <Content Include="Views\TEAMs\Details.cshtml" />
     <Content Include="Views\TEAMs\Edit.cshtml" />
     <Content Include="Views\TEAMs\Index.cshtml" />
+    <Content Include="Views\PLAYERs\Create.cshtml" />
+    <Content Include="Views\PLAYERs\Delete.cshtml" />
+    <Content Include="Views\PLAYERs\Details.cshtml" />
+    <Content Include="Views\PLAYERs\Edit.cshtml" />
+    <Content Include="Views\PLAYERs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
